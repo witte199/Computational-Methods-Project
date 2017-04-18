@@ -39,10 +39,6 @@ from scipy.ndimage import gaussian_filter
 ##allows all photos in directory to be turned into binary images
 
 
-    
-##define image
-im = mpimg.imread(filename)
-
 class project_1(object):
     def __init__(self, name):
         self.name = name
@@ -54,6 +50,9 @@ class project_1(object):
             print filename
 newlist = project_1("Img1_Img10")
 newlist.listgen()
+
+##define image
+im = mpimg.imread(filename)
 
 def bitxt(filename):
 
